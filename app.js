@@ -28,9 +28,13 @@ const rl = readline.createInterface({
 
 
 // membuat Pertanyaaan Nama, NoHP, Email
+// Membuat pertanyaan Nama
 rl.question('What your name? ',(name) => {
+    // Membuat pertanyaan NoHP
    rl.question('What your number phone? ', (nohp)=> {
+    // Membuat pertanyaan Email
     rl.question('what your Email? ',(email)=> {
+        // Output dari Semua Pertanyaan
         console.log(`Hatur Thank You ${name}, Your Number is ${nohp}, Your Email is ${email} `);
         rl.close();
     });
